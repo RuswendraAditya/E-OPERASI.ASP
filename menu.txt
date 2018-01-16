@@ -1,0 +1,4 @@
+                    <li><a id="mnu0101" onserverclick="mnu0101_click" runat="server" >&raquo; Daftar Pasien</a></li>
+                    <li><a id="mnu0101" onserverclick="mnu0102_click" runat="server" >&raquo; Laporan Operasi</a></li>
+                    <li><a id="mnu0103" onserverclick="mnu0103_click" runat="server" >&raquo; Refresh</a></li>
+                    <li><a id="mnu0104" onserverclick="mnu0104_click" runat="server" >&raquo; Keluar</a></li>

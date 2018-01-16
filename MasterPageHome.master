@@ -1,0 +1,98 @@
+<%@ Master Language="VB" CodeFile="MasterPageHome.master.vb" Inherits="MasterPageHome" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <title></title>
+    
+    <!--meta name="Author" content="TemplatesASPNet.com" /-->
+    <meta name="title" content="Templates ASP.NET" />
+    <meta name="robots" content="all" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="Styles/geral.css" type="text/css"/>
+    <link rel="stylesheet" href="Styles/responsivemobilemenu.css" type="text/css"/>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="Scripts/responsivemobilemenu.js"></script>
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script>
+
+
+       function preventBack(){window.history.forward();}
+        setTimeout("preventBack()", 10);
+        window.onunload=function(){null};
+        
+        
+</script>
+
+</head>
+
+<body>
+
+    <form id="Form1" runat="server">
+                <div class="header">
+                    <div class="header_resize">
+                        <br />
+                        <div class="clr"></div>
+                        <div class="slider">
+                        <div id="coin-slider"> 
+                            <img src="images/KAMAR OPERASI.jpg" width ="100%" alt="" style="height: 110px" />
+
+                        <div class="column tLeft">                            
+                        </div>
+                    </div>
+               </div>
+       <nav class="rmm left">
+        </nav>
+               
+               <div class="clr">
+
+               </div>
+                </div>
+            </div> <!-- header -->
+
+    <div class="content">    
+        <div class="content_resize">
+            <div class ="responsiveForm">&nbsp;</div>    
+                <div class="gridContainer">
+                    <header>
+                        <section class="contact">
+                            <span class="left left5"></span>
+                            <span class="left left5"><a href=""></a> </span>
+                        </section>
+                    </header>                    <!--fourGrid-->
+                </div> <!--gridContainer-->        
+                <asp:ContentPlaceHolder ID="BodyContent" runat="server"></asp:ContentPlaceHolder>
+                <div class="footer">
+                    <div class="gridContainer">
+                        <div class="column">
+                            <div class="top10">
+            	                <br />
+                                <a href="">Yakkum.co.id</a>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <ul class="tCenter">
+                                <li><a href='#'>Bethesda.or.id</a></li>
+                            </ul>        
+                        </div>
+                        <div class="column tRight">
+                            <b>More:</b><br />
+                                <ul class="left10">
+                                    <li><a href="#" target="_blank">e-RM</a></li>
+                                </ul>            
+                        </div>                    
+                </div><!--footer-->
+                <div class="clear"></div>
+            </div> <!--responsiveForm-->    
+        </div> <!--content_resize-->
+      </div><!--content-->
+    </form>
+</body>
+</html>

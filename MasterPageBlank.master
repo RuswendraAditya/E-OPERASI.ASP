@@ -1,0 +1,64 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPageBlank.master.vb" Inherits="MasterPageBlank" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <title></title>
+    
+    <!--meta name="Author" content="TemplatesASPNet.com" /-->
+    <meta name="title" content="Templates ASP.NET" />
+    <meta name="robots" content="all" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="Styles/geral.css" type="text/css"/>
+    <link rel="stylesheet" href="Styles/responsivemobilemenu.css" type="text/css"/>
+
+    <link href="styles/basic.css" type="text/css" rel="stylesheet" />
+    <link href="StyleMenu.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="Scripts/responsivemobilemenu.js"></script>
+
+    <script src="scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="scripts/jquery.responsivetable.min.js" type="text/javascript"></script>
+
+<script>
+        $(document).ready(function () {
+            setupResponsiveTables();
+        });
+
+        function setupResponsiveTables() {
+            $('.responsiveTable1').responsiveTable();
+        }
+
+
+
+       function preventBack(){window.history.forward();}
+        setTimeout("preventBack()", 10);
+        window.onunload=function(){null};
+        
+        
+</script>
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+
+    
+</head>
+
+<body>
+
+    <form id="Form1" runat="server">
+ 
+    <div class="content">    
+        <div class="content_resize">
+            <div class ="responsiveForm"></div>       
+                <asp:ContentPlaceHolder ID="BodyContent" runat="server"></asp:ContentPlaceHolder>
+               
+        </div> <!--content_resize-->
+      </div><!--content-->
+    </form>
+</body>
+</html>

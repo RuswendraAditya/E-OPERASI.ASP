@@ -1,0 +1,54 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MainLibWebERM
+</name>
+</assembly>
+<members>
+<member name="F:MainLibWebERM.MasterLib.HierarchicalDataSet.dataView">
+	<summary>
+ The DataView reference that the class is pointing to
+ </summary>
+</member><member name="F:MainLibWebERM.MasterLib.HierarchicalDataSet.idColumnName">
+	<summary>
+ The name of the primary key column
+ </summary>
+</member><member name="F:MainLibWebERM.MasterLib.HierarchicalDataSet.parentIdColumnName">
+	<summary>
+ The name of the parent foreign key column
+ </summary>
+</member><member name="F:MainLibWebERM.MasterLib.HierarchicalDataSet.columnIsString">
+	<summary>
+ evaluated once the constructor is called, true if the primary keys are strings
+ </summary>
+</member><member name="M:MainLibWebERM.MasterLib.HierarchicalDataSet.#ctor(System.Data.DataSet,System.String,System.String)">
+	<summary>
+ The constructor of the class
+ </summary>
+	<param name="dataSet">The dataset that contains the data, the first table's view will be taken</param>
+	<param name="idColumnName">The Primary key column name</param>
+	<param name="parentidColumnName">The Parent Primary key column name that identifies the Parent-Child relationship</param>
+</member><member name="M:MainLibWebERM.MasterLib.HierarchicalDataSet.#ctor(System.Data.DataView,System.String,System.String)">
+	<summary>
+ The constructor of the class
+ </summary>
+	<param name="dataView">The dataView that contains the data</param>
+	<param name="idColumnName">The Primary key column name</param>
+	<param name="parentidColumnName">The Parent Primary key column name that identifies the Parent-Child relationship</param>
+</member><member name="M:MainLibWebERM.MasterLib.HierarchicalDataSet.GetParentRow(System.Data.DataRowView)">
+	<summary>
+ Gets the parent row, given a row
+ </summary>
+	<param name="row"></param>
+	<returns></returns>
+</member><member name="M:MainLibWebERM.MasterLib.HierarchicalDataSet.GetFilter(System.String,System.String)">
+	<summary>
+ Prepares the filter based on the column names and type
+ </summary>
+	<param name="columnName"></param>
+	<param name="value"></param>
+	<returns></returns>
+</member>
+</members>
+</doc>
